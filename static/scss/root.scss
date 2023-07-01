@@ -1,0 +1,42 @@
+// @font-face {
+//   font-family: "HankenGrotesk";
+//   font-display: swap;
+//   font-weight: 100 900;
+//   src: url("assets/fonts/HankenGrotesk-VariableFont_wght.ttf")
+//     format("truetype");
+// }
+
+:root {
+  --clr-primary-hsl: 252, 100%, 67%;
+  --clr-secondary-hsl: 241, 72%, 46%;
+
+  --clr-neutral-hsl: 224, 30%, 27%;
+
+  --clr-neutral: hsl(var(--clr-neutral-hsl));
+  --clr-primary: hsl(var(--clr-primary-hsl));
+  --clr-secondary: hsl(var(--clr-secondary-hsl));
+
+  --font-family-default: "HankenGrotesk", sans-serif;
+
+  --fs: 1.125rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
