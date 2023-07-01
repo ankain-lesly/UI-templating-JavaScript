@@ -10,11 +10,12 @@
   </head>
   <body>
     <header>
-      <div class="container flex start">
+      <div class="container flex between">
         <a href="#" class="flex gap-x">
           <img src="./static/media/default-profile.png" alt="" />
           <h4>GitHub</h4>
         </a>
+        <button class="reset-data" title="Reset All Data">|||</button>
       </div>
     </header>
     <main class="root flex">
@@ -25,10 +26,20 @@
           <div class="profile flex gap-1">
             <div class="image-cover">
               <div class="placeholder">
-                <img src="./static/media/default-profile.png" alt="Profile" />
+                <img
+                  class="profile_img_preview"
+                  src="./static/media/default-profile.png"
+                  alt="Profile"
+                />
               </div>
             </div>
             <div class="image-actions">
+              <input
+                type="file"
+                accept="image/*"
+                data-inp-reff=".reff-profile-image"
+                id="profile_cover"
+              />
               <label
                 for="profile_cover"
                 class="profile_cover_btn flex h_opacity"
@@ -61,11 +72,7 @@
         </div>
         <div class="view ui-template">
           <div class="card flex column">
-            <div class="image-cover reff-profile">
-              <!-- <div class="placeholder">
-                <img src="./static/media/default-profile.png" alt="Profile" />
-              </div> -->
-            </div>
+            <div class="image-cover reff-profile-image"></div>
             <div class="info">
               <h3 class="reff-username"></h3>
               <h5 class="reff-email"></h5>
@@ -73,7 +80,7 @@
             <div class="about">
               <p class="reff-about"></p>
             </div>
-            <div class="icons flex between">
+            <div class="icons card_icons flex between">
               <div class="flex between">
                 <img src="./static/media/icons-facebook.png" alt="icon" />
                 <img src="./static/media/icon-instagram.png" alt="icon" />
@@ -86,5 +93,8 @@
         </div>
       </div>
     </main>
+
+    <script src="./static/scripts/jQuery.min.js"></script>
+    <script src="./static/scripts/main.js"></script>
   </body>
 </html>
