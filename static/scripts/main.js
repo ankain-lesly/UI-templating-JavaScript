@@ -38,7 +38,7 @@ $(".reset-data").on("click", (e) => {
   if (!confirm_info) return;
 
   clearStorage();
-  window.location = "/";
+  window.location.reload();
 });
 function _log(content) {
   console.log(content);
