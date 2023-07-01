@@ -9,11 +9,82 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
   </head>
   <body>
-    <div class="test one">Test One</div>
-    <div class="test two">Test Two</div>
-    <div class="test three">Test Three</div>
-    <div class="test four">Test Four</div>
+    <header>
+      <div class="container flex start">
+        <a href="#" class="flex gap-x">
+          <img src="./static/media/default-profile.png" alt="" />
+          <h4>GitHub</h4>
+        </a>
+      </div>
+    </header>
+    <main class="root flex">
+      <div class="container flex top">
+        <div class="view form-container">
+          <h3 class="title">Enter Details</h3>
 
-    hi
+          <div class="profile flex gap-1">
+            <div class="image-cover">
+              <div class="placeholder">
+                <img src="./static/media/default-profile.png" alt="Profile" />
+              </div>
+            </div>
+            <div class="image-actions">
+              <label
+                for="profile_cover"
+                class="profile_cover_btn flex h_opacity"
+              >
+                <img src="./static/media/camera-circle.png" alt="icon" />
+                <small>Upload Image</small>
+              </label>
+            </div>
+          </div>
+
+          <div class="hr-line"></div>
+
+          <div class="form-group">
+            <label for="username">Full name</label>
+            <input type="text" data-inp-reff=".reff-username" id="username" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="text" data-inp-reff=".reff-email" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="about">About you</label>
+            <textarea
+              data-inp-reff=".reff-about"
+              id="about"
+              cols="30"
+              rows="3"
+            ></textarea>
+          </div>
+        </div>
+        <div class="view ui-template">
+          <div class="card flex column">
+            <div class="image-cover reff-profile">
+              <!-- <div class="placeholder">
+                <img src="./static/media/default-profile.png" alt="Profile" />
+              </div> -->
+            </div>
+            <div class="info">
+              <h3 class="reff-username"></h3>
+              <h5 class="reff-email"></h5>
+            </div>
+            <div class="about">
+              <p class="reff-about"></p>
+            </div>
+            <div class="icons flex between">
+              <div class="flex between">
+                <img src="./static/media/icons-facebook.png" alt="icon" />
+                <img src="./static/media/icon-instagram.png" alt="icon" />
+                <img src="./static/media/icons-dribbble.png" alt="icon" />
+                <img src="./static/media/icon-instagram.png" alt="icon" />
+              </div>
+            </div>
+            <button class="card_btn actions">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
