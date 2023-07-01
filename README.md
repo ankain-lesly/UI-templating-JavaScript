@@ -6,4 +6,6 @@ This project basically listens to special inputs on keypress in our DOM, gets it
 
 ## Screenshots
 
-![](./screenshot.jpg)
+![](./static/screenshot.png)
+
+![](./static/project_demo.gif)

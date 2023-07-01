@@ -35,6 +35,7 @@
             </div>
             <div class="image-actions">
               <input
+                autocomplete="false"
                 type="file"
                 accept="image/*"
                 data-inp-reff=".reff-profile-image"
@@ -54,15 +55,26 @@
 
           <div class="form-group">
             <label for="username">Full name</label>
-            <input type="text" data-inp-reff=".reff-username" id="username" />
+            <input
+              autocomplete="false"
+              type="text"
+              data-inp-reff=".reff-username"
+              id="username"
+            />
           </div>
           <div class="form-group">
             <label for="email">Email Address</label>
-            <input type="text" data-inp-reff=".reff-email" id="email" />
+            <input
+              autocomplete="false"
+              type="text"
+              data-inp-reff=".reff-email"
+              id="email"
+            />
           </div>
           <div class="form-group">
             <label for="about">About you</label>
             <textarea
+              autocomplete="false"
               data-inp-reff=".reff-about"
               id="about"
               cols="30"
