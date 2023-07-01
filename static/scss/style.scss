@@ -1,5 +1,25 @@
+@import "variables";
+
 body {
-  font-family: var(--font-family-default);
-  font-size: var(--fs);
-  color: var(--clr-neutral);
+  font-family: $font-family-default;
+  font-size: $fs;
+  color: $clr-white;
+  background-color: $clr-dark;
+}
+
+.test {
+  background-color: black;
+
+  &.one {
+    color: $clr-white;
+  }
+  &.two {
+    color: $clr-dark;
+  }
+  &.three {
+    color: $clr-primary;
+  }
+  &.four {
+    color: $clr-secondary;
+  }
 }

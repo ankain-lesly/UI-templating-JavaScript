@@ -1,1 +1,1 @@
-body{font-family:var(--font-family-default);font-size:var(--fs);color:var(--clr-neutral)}
+body{font-family:var(--font-family-default);font-size:var(--fs);color:var(--clr-white);background-color:var(--clr-dark)}.test{background-color:#000}.test.one{color:var(--clr-white)}.test.two{color:var(--clr-dark)}.test.three{color:var(--clr-primary)}.test.four{color:var(--clr-secondary)}
